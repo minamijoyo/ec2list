@@ -29,6 +29,7 @@ module Ec2list
           tags[:Name],
           instance.private_ip_address,
           instance.public_ip_address,
+          tags[:attached_asg],
         ].join("\t")
       end
 
